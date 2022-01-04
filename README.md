@@ -10,6 +10,8 @@ Sigue estos pasos para lograr tener en funcionamiento nuestro proyecto del Backe
 ### Paso 0. Clonar repositorio
 
 Teniendo instalado el Git en tu ordenador y despues de autenticarte con GitHub en tu consola:
+Recuerda que reciente GitHub como medida de seguridad creo algo llamado: Personal access tokens
+Para iniciar sesión de forma seguran en las consolas.
 
 ```
 git clone https://github.com/achique-luisdan/dev-services.git

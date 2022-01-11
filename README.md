@@ -40,3 +40,11 @@ pip install -r dev.txt
 ```
 python manage.py runserver
 ```
+
+## Participantes
+
+Lope Palacios
+
+Alejandro Pedrique
+
+Luis Achique

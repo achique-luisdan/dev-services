@@ -34,6 +34,11 @@ dev-services\Scripts\activate
 ```
 pip install -r dev.txt
 ```
+Para fijar o guardar un listado de los paquetes necesario de desarrollo:
+
+```
+pip freeze > dev.txt
+```
 
 ### Paso 4. Encender servidor local de Django
 

@@ -25,9 +25,15 @@ SECRET_KEY = 'django-insecure-fw^b^*m4eg1v0%yh)eww_e4jl3j&@l)8-84=g6ayv(ifmurhlh
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
+CORS_ORIGIN_ALLOW_ALL = True
+
+CORS_ORIGIN_WHITELIST = (
+    'http://localhost:8080',
+    'http://localhost'
+)
 # Application definition
 
 INSTALLED_APPS = [
@@ -37,6 +43,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # Instalación de Corsheaders.
+    'corsheaders',
 
     'rest_framework',
     'core.skills',
@@ -56,6 +64,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    # Agregación del middleware para Corsheaders.
+    'corsheaders.middleware.CorsMiddleware',
 ]
 
 ROOT_URLCONF = 'services.urls'
